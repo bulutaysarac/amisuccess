@@ -41,7 +41,7 @@ const saveTasks = () => {
 // Save target to localStorage
 const saveTarget = () => {
   if (!targetValue.value || targetValue.value < 0) {
-    showErrorDialog("Please enter a valid target!");
+    showErrorDialog("Please enter a valid target value!");
     return;
   }
   localStorage.setItem('targetValue', JSON.stringify(targetValue.value));
